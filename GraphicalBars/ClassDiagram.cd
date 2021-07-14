@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="IGU.App" Collapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.Properties.Resources" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.inputOutput.TextDAO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\inputOutput\DAOs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IGU.src.inputOutput.JsonDAO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\inputOutput\DAOs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IGU.src.inputOutput.ImageDAO" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\inputOutput\DAOs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IGU.src.model.Model">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAQIACAAAAAAAIAAAAAAAAAAAAAAABAEAAAAAAg=</HashCode>
+      <FileName>src\model\Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.model.MyPoint" BaseTypeListCollapsed="true">
+    <Position X="18" Y="4" Width="2" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAABAAAEIAAAAAAAgAAAIAAAAGAAAABAAAA=</HashCode>
+      <FileName>src\model\MyPoint.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="IGU.src.model.ViewModel">
+    <Position X="15" Y="0.75" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>TAAgABAr0DAQChRIMgIAQAoERF0AAACABlNCBAAMABg=</HashCode>
+      <FileName>src\model\ViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.utils.ConfigConstants" Collapsed="true">
+    <Position X="10" Y="4.75" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>ASCAAgAgAABAAAAAAgAAAAAAAAAAAAAAAAAABAAAAAE=</HashCode>
+      <FileName>src\utils\ConfigConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.utils.AbstractFunction" Collapsed="true">
+    <Position X="8" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAABAAAAAAgAAAAAAA=</HashCode>
+      <FileName>src\utils\functionsUtils\AbstractFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.utils.NumericTextBox" Collapsed="true">
+    <Position X="4.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAIAAAAAAAAAAAAAQAAAAAAEAAAAAAAAAABAA=</HashCode>
+      <FileName>src\utils\NumericTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.utils.PlotUtils" Collapsed="true">
+    <Position X="7.25" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABAAAAAAAAEAAEABAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\PlotUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.utils.functionsUtils.PolynomialFunction" Collapsed="true">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\functionsUtils\Functions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.utils.functionsUtils.CosFunction" Collapsed="true">
+    <Position X="4.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\functionsUtils\Functions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.utils.functionsUtils.SinFunction" Collapsed="true">
+    <Position X="6" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\functionsUtils\Functions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.utils.functionsUtils.AbsFunction" Collapsed="true">
+    <Position X="7.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\functionsUtils\Functions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.view.AddPointWindow" BaseTypeListCollapsed="true">
+    <Position X="12.5" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>IBAAAAAAAAAAAAAAAgBABAQAABAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\view\AddPointWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="IGU.src.view.BarsConfigArgs" Collapsed="true">
+    <Position X="5.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>src\view\ConfigWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.view.PolylineConfigArgs" Collapsed="true">
+    <Position X="7.25" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\view\ConfigWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.view.PointsConfigArgs" Collapsed="true">
+    <Position X="5.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\view\ConfigWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.view.CanvasConfigArgs" Collapsed="true">
+    <Position X="5.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\view\ConfigWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IGU.src.view.ConfigWindow" BaseTypeListCollapsed="true">
+    <Position X="13" Y="9.5" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAEgAFABAAAwAIBIGAVABCIRSAAAAQAAAUBCAAAgQ=</HashCode>
+      <FileName>src\view\ConfigWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="IGU.src.view.ModelessUI" BaseTypeListCollapsed="true">
+    <Position X="15" Y="7.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABAAgBAAAEAACQAAAA0AAEEEAAAAAAAAIAwQBAAQAA=</HashCode>
+      <FileName>src\view\ModelessUI.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="IGU.src.view.PlotWindow" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="7.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AARKIAAFQAAEAAEA4BdQggCAQAAgAUkAAEEEABgBCBA=</HashCode>
+      <FileName>src\view\PlotWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Struct Name="IGU.src.utils.RepresentationParams" Collapsed="true">
+    <Position X="9.25" Y="8.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAACAACAAQAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\ConfigConstants.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IGU.src.utils.BarsConfig" Collapsed="true">
+    <Position X="7.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAEAAAAAAE=</HashCode>
+      <FileName>src\utils\ConfigConstants.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IGU.src.utils.PolylineConfig" Collapsed="true">
+    <Position X="9.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\utils\ConfigConstants.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IGU.src.utils.PointsConfig" Collapsed="true">
+    <Position X="7.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAQAAAAAAAAAAAAAAAAAAAAAEAAAAAAA=</HashCode>
+      <FileName>src\utils\ConfigConstants.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="IGU.src.utils.CanvasConfig" Collapsed="true">
+    <Position X="9.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAARAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>src\utils\ConfigConstants.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="IGU.src.inputOutput.IDAO">
+    <Position X="10.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>src\inputOutput\IDAO.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

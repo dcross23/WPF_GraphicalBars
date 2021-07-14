@@ -1,0 +1,178 @@
+﻿<Window x:Class="GraphicalBars.src.view.ModelessUI"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicalBars.src.view"
+        xmlns:custom="clr-namespace:GraphicalBars.src.utils" 
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        mc:Ignorable="d"
+        Title="Graphical Bars UI" Icon="/GraphicalBars;component/icons/GraphicalBarsIcon.png"
+        Height="450" Width="460" MinHeight="450" MinWidth="460">
+
+    
+    <DockPanel>
+        <!-- Menu -->
+        <Menu DockPanel.Dock="Top" Name="MainMenu" VerticalAlignment="Center" Background="{DynamicResource MenuBackgroudBrush}" BorderBrush="{DynamicResource MenuBordersBrush}" BorderThickness="2">
+            <!-- Archive menu -->
+            <MenuItem Header="Archivo" Style="{StaticResource MenuItemStyle}">
+                <MenuItem Name="MenuItem_Import" Header="Importar Hoja" Click="MenuItem_Import_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/GraphicalBars;component/icons/ImportIcon.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem Name="MenuItem_Export" Header="Expotar Hoja" Click="MenuItem_Export_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/GraphicalBars;component/icons/ExportIcon.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+
+            <!-- Graphs menu -->
+            <MenuItem Header="Gráficos" Style="{StaticResource MenuItemStyle}">
+                <MenuItem Name="MenuItem_Bars" Header="Barras" IsCheckable="True" Checked="Graphs_Checked" Unchecked="Graphs_Unchecked" IsChecked="True">
+                    <MenuItem.Icon>
+                        <Image Source="/GraphicalBars;component/icons/BarsIcon.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem Name="MenuItem_Polyline" Header="Polilinea" IsCheckable="True" Checked="Graphs_Checked" Unchecked="Graphs_Unchecked">
+                    <MenuItem.Icon>
+                        <Image Source="/GraphicalBars;component/icons/PolylineIcon.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <MenuItem Name="MenuItem_CirclePoints" Header="Puntos" IsCheckable="True" Checked="Graphs_Checked" Unchecked="Graphs_Unchecked">
+                    <MenuItem.Icon>
+                        <Image Source="/GraphicalBars;component/icons/CirclePointsIcon.png"/>
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+
+            <!-- Configuration menu -->
+            <MenuItem Header="Configuración" Style="{StaticResource MenuItemStyle}" Click="MenuItem_Config_Click"/>
+
+
+        </Menu>
+
+        
+        <!-- "Menu" at the bottom -->
+        <Border BorderBrush="{DynamicResource MenuBordersBrush}" BorderThickness="2" DockPanel.Dock="Bottom">
+            <Grid Height="30" Background="{DynamicResource MenuBackgroudBrush}" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1.3*"/>
+                    <ColumnDefinition Width="0.7*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border Name="BorderTextBlock_PointSelected" Grid.Column="0" BorderBrush="Black" BorderThickness="1" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="25,0,0,0" Visibility="Hidden">
+                    <TextBlock Name="TextBlock_PointSelected" Background="#FFF1F1F1" FontWeight="Bold" FontSize="13" Padding="5,1" Visibility="Hidden"/>
+                </Border>
+
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button Name="Button_Sort" Click="Button_Sort_Click" Style="{StaticResource ButtonsDownMenu}" ToolTip="Ordenar menor a mayor">
+                        <Button.Content>
+                            <Image Source="/GraphicalBars;component/icons/SortButton.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <Button Name="Button_SortRev" Click="Button_Sort_Click" Style="{StaticResource ButtonsDownMenu}" ToolTip="Ordenar mayor a menor">
+                        <Button.Content>
+                            <Image Source="/GraphicalBars;component/icons/SortRevButton.png"/>
+                        </Button.Content>
+                    </Button>
+
+                </StackPanel>
+
+                <StackPanel Grid.Column="2" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+
+                    <Button Click="Button_RemovePoints_Click" Style="{StaticResource ButtonsDownMenu}" ToolTip="Eliminar todos los puntos">
+                        <Button.Content>
+                            <Image Source="/GraphicalBars;component/icons/RemoveAllPoints.png"/>
+                        </Button.Content>
+                    </Button>
+
+                    <Button Click="Button_AddCoordinates_Click" Style="{StaticResource ButtonsDownMenu}" ToolTip="Añadir punto">
+                        <Button.Content>
+                            <Image Source="/GraphicalBars;component/icons/AddPointButton.png"/>
+                        </Button.Content>
+                    </Button>
+
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        
+        <!-- Datagrid to display data -->
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <DataGrid Name="SheetDataGrid" SelectionMode="Single" AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" 
+                      CanUserResizeRows="False" CanUserResizeColumns="False" CanUserSortColumns="True" SelectionChanged="SheetDataGrid_SelectionChanged">
+                <DataGrid.Columns>
+                    <!-- Aux column just for selection -->
+                    <DataGridTextColumn Width="20" IsReadOnly="True"/>
+
+                    <!-- X column -->
+                    <DataGridTemplateColumn Header="X" Width="*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!-- Al introducir algo en el textbox, se actualiza la observable colection cuando el textbox pierda el foco (con dar enter vale) -->
+                                <custom:NumericTextBox Text="{Binding Mode=TwoWay, Path=CoordinateX, UpdateSourceTrigger=LostFocus}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <!-- Y column -->
+                    <DataGridTemplateColumn Header="Y" Width="*">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <!-- Al introducir algo en el textbox, se actualiza la observable colection cuando el textbox pierda el foco (con dar enter vale) -->
+                                <custom:NumericTextBox Text="{Binding Mode=TwoWay, Path=CoordinateY, UpdateSourceTrigger=LostFocus}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <!-- Color column -->
+                    <DataGridTemplateColumn Header="Color" Width="90">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <xctk:ColorPicker SelectedColor="{Binding Mode=TwoWay, Path=PointColor, UpdateSourceTrigger=PropertyChanged}" ></xctk:ColorPicker>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    
+                    
+                    <!-- Delete row button column -->
+                    <DataGridTemplateColumn Width="75">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                                    <Button Margin="2" Width="20" HorizontalAlignment="Center" ToolTip="Subir punto" Click="Button_MovePointUp_Click">
+                                        <Button.Content>
+                                            <Image Source="/GraphicalBars;component/icons/ArrowUp.png"/>
+                                        </Button.Content>
+                                    </Button>
+
+                                    <Button Margin="2" Width="20" HorizontalAlignment="Center" ToolTip="Bajar punto" Click="Button_MovePointDown_Click">
+                                        <Button.Content>
+                                            <Image Source="/GraphicalBars;component/icons/ArrowDown.png"/>
+                                        </Button.Content>
+                                    </Button>
+
+                                    <Button Margin="2" Width="20" HorizontalAlignment="Center" Click="DeleteButton_Click" ToolTip="Eliminar punto">
+                                        <Button.Content>
+                                            <Image Source="/GraphicalBars;component/icons/RemovePointButton.png"/>
+                                        </Button.Content>
+                                    </Button>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                </DataGrid.Columns>
+            </DataGrid>
+        </ScrollViewer>
+
+    </DockPanel>
+</Window>

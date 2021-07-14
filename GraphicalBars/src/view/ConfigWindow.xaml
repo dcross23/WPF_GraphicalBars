@@ -1,0 +1,296 @@
+﻿<Window x:Class="GraphicalBars.src.view.ConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GraphicalBars.src.view" 
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
+        xmlns:custom="clr-namespace:GraphicalBars.src.utils"
+        mc:Ignorable="d"
+        Title="Configuración" Height="640" Width="475" ResizeMode="CanMinimize"
+        Icon="/GraphicalBars;component/icons/GraphicalBarsIcon.png">
+
+    <Window.Resources>
+        <Style x:Key="GroupBoxConfigStyle">
+            <Setter Property="GroupBox.FontSize" Value="12"/>
+            <Setter Property="GroupBox.FontWeight" Value="Bold"/>
+            <Setter Property="GroupBox.Margin" Value="0,4"/>
+            <Setter Property="GroupBox.BorderBrush" Value="Black"/>
+            <Setter Property="GroupBox.BorderThickness" Value="2"/>
+            <Setter Property="GroupBox.Background" Value="#FFF1FBFF"/>
+        </Style>
+    </Window.Resources>
+    
+    
+    <StackPanel Orientation="Vertical" VerticalAlignment="Stretch">
+        <!-- Menus options -->
+        <GroupBox Header="Opciones para menus" Style="{StaticResource GroupBoxConfigStyle}">
+            <Grid VerticalAlignment="Stretch">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Menu borders color -->
+                <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                    <TextBlock Text="Color del borde de los menús" Style="{StaticResource TextBlockStyle}"/>
+                </Border>
+
+                <xctk:ColorPicker Grid.Column="1" Name="ColorPicker_Borders" DisplayColorTooltip="True" AvailableColorsSortingMode="HueSaturationBrightness"
+                                      VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="26" FontSize="12" FontWeight="Normal"
+                                      SelectedColorChanged="ColorPicker_Borders_SelectedColorChanged" />
+
+                <!-- Menu backgrounds color -->
+                <Border Grid.Row="1" Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                    <TextBlock Text="Color de fondo de los menús" Style="{StaticResource TextBlockStyle}"/>
+                </Border>
+
+                <xctk:ColorPicker Grid.Row="1" Grid.Column="1" Name="ColorPicker_Background" DisplayColorTooltip="True" AvailableColorsSortingMode="HueSaturationBrightness"
+                                      VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="26" 
+                                      SelectedColorChanged="ColorPicker_Background_SelectedColorChanged"/>
+                
+                <!-- Sort option by X or Y -->
+                <Border Grid.Row="2" Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                    <TextBlock Text="Ordenar con botones por" Style="{StaticResource TextBlockStyle}"/>
+                </Border>
+
+                <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="X" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <RadioButton Name="RadioButton_SortX" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,0,30,0"
+                                 Checked="RadioButton_Sort_Checked"/>
+
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="Y" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <RadioButton Name="RadioButton_SortY" VerticalAlignment="Center" HorizontalAlignment="Center" Checked="RadioButton_Sort_Checked"/>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+
+        
+        <!-- Bars -->
+        <GroupBox Header="Barras" Style="{StaticResource GroupBoxConfigStyle}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <!-- Row 0 -->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="Usar color del punto para la barra" Style="{StaticResource TextBlockStyle}"/>
+                            
+                    </Border>
+                    <CheckBox Name="CheckBox_UseColorPointForBar" VerticalAlignment="Center" Checked="CheckBox_UseColorPointForBar_CheckedUnchecked" Unchecked="CheckBox_UseColorPointForBar_CheckedUnchecked"></CheckBox>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="A trazos" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <CheckBox Name="CheckBox_DashedBar" VerticalAlignment="Center" Checked="CheckBox_DashedBar_CheckedUnchecked" Unchecked="CheckBox_DashedBar_CheckedUnchecked"></CheckBox>
+                </StackPanel>
+
+                <!-- Rows 1,2 for column 0 -->
+                <Border Grid.Row="1" Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                    <TextBlock Text="Color para las barras" Style="{StaticResource TextBlockStyle}"/>
+                </Border>
+
+                <xctk:ColorPicker Grid.Row="2" Grid.Column="0" Name="ColorPicker_Bars" DisplayColorTooltip="True" AvailableColorsSortingMode="HueSaturationBrightness"
+                                      VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="26"
+                                      SelectedColorChanged="ColorPicker_Bars_SelectedColorChanged"/>
+
+                <!-- Rows 1,2 for column 1 -->
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="Remarcar al seleccionar punto" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <CheckBox Name="CheckBox_HighlightBar" VerticalAlignment="Center" Checked="CheckBox_HighlightBar_CheckedUnchecked" Unchecked="CheckBox_HighlightBar_CheckedUnchecked"></CheckBox>
+                </StackPanel>
+                
+                
+                <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="Ancho" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <xctk:DoubleUpDown Name="DoubleUpDown_BarWidth" VerticalAlignment="Center" Width="100" Minimum="1" Maximum="30" Increment="0.5"
+                                       ClipValueToMinMax="True" ValueChanged="DoubleUpDown_BarWidth_ValueChanged"></xctk:DoubleUpDown>                    
+                </StackPanel>
+                
+            </Grid>
+        </GroupBox>
+
+        
+        
+        <!-- Polyline -->
+        <GroupBox Header="Polilinea" Style="{StaticResource GroupBoxConfigStyle}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <!-- Row 0 -->
+                <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                    <TextBlock Text="Color de la polilinea" Style="{StaticResource TextBlockStyle}"/>
+                </Border>
+
+                <xctk:ColorPicker Grid.Column="1" Name="ColorPicker_Polyline" DisplayColorTooltip="True" AvailableColorsSortingMode="HueSaturationBrightness"
+                                      VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="26" SelectedColorChanged="ColorPicker_Polyline_SelectedColorChanged"/>
+
+
+                <!-- Row 1 -->
+                <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="Ancho" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <xctk:DoubleUpDown Name="DoubleUpDown_PolylineWidth" VerticalAlignment="Center" Width="100" Minimum="1" Maximum="10" Increment="0.5"
+                                       ClipValueToMinMax="True" ValueChanged="DoubleUpDown_PolylineWidth_ValueChanged"></xctk:DoubleUpDown>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="A trazos" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <CheckBox Name="CheckBox_DashedPolyline" VerticalAlignment="Center" Checked="CheckBox_DashedPolyline_CheckedUnchecked" Unchecked="CheckBox_DashedPolyline_CheckedUnchecked"></CheckBox>
+                </StackPanel>
+
+            </Grid>
+        </GroupBox>
+
+        
+        
+        <!-- Circle points -->
+        <GroupBox Header="Puntos" Style="{StaticResource GroupBoxConfigStyle}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <!-- Row 0-->
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="Usar color del punto para el punto" Style="{StaticResource TextBlockStyle}"/>
+
+                    </Border>
+                    <CheckBox Name="CheckBox_UseColorPointForPoint" VerticalAlignment="Center" Checked="CheckBox_UseColorPointForPoint_CheckedUnchecked" Unchecked="CheckBox_UseColorPointForPoint_CheckedUnchecked"></CheckBox>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="Tamaño" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <xctk:DoubleUpDown Name="DoubleUpDown_PointSize" VerticalAlignment="Center" Width="100" Minimum="2" Maximum="14" Increment="0.5" 
+                                        ClipValueToMinMax="True" ValueChanged="DoubleUpDown_PointSize_ValueChanged"></xctk:DoubleUpDown>
+                </StackPanel>
+
+                <!-- Rows 1,2 for column 0 -->
+                <Border Grid.Row="1" Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                    <TextBlock Text="Color para los puntos" Style="{StaticResource TextBlockStyle}"/>
+                </Border>
+
+                <xctk:ColorPicker Grid.Row="2" Grid.Column="0" Name="ColorPicker_Points" DisplayColorTooltip="True" AvailableColorsSortingMode="HueSaturationBrightness"
+                                      VerticalAlignment="Center" HorizontalAlignment="Center" Width="200" Height="26"
+                                      SelectedColorChanged="ColorPicker_Points_SelectedColorChanged"/>
+
+                <!-- Row 1 for column 1 -->
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="Remarcar al seleccionar punto" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <CheckBox Name="CheckBox_HighlightPoint" VerticalAlignment="Center" Checked="CheckBox_HighlightPoint_CheckedUnchecked" Unchecked="CheckBox_HighlightPoint_CheckedUnchecked"></CheckBox>
+                </StackPanel>
+            </Grid>
+        </GroupBox>
+
+        
+        
+        <!-- Canvas -->
+        <GroupBox Header="Canvas" Style="{StaticResource GroupBoxConfigStyle}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                
+                <!-- Zoom -->
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="Min zoom" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <xctk:DoubleUpDown Name="DoubleUpDown_MinZoom" FormatString="P" VerticalAlignment="Center" Width="100" Minimum="0.1" Maximum="10" Increment="0.1"
+                                       ClipValueToMinMax="True" ValueChanged="DoubleUpDown_MinZoom_ValueChanged"></xctk:DoubleUpDown>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="Max zoom" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <xctk:DoubleUpDown Name="DoubleUpDown_MaxZoom" FormatString="P"  VerticalAlignment="Center" Width="100" Minimum="0.1" Maximum="10" Increment="0.1"
+                                       ClipValueToMinMax="True" ValueChanged="DoubleUpDown_MaxZoom_ValueChanged"></xctk:DoubleUpDown>
+                </StackPanel>
+
+                <!-- Representation parameters -->
+                <StackPanel Grid.Row="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="xMin" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <custom:NumericTextBox x:Name="NumericTextBox_xMin" Style="{StaticResource NumericTextBoxStyle}" LostFocus="NumericTextBox_RepParams_LostFocus" KeyDown="NumericTextBox_RepParams_KeyDown"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="xMax" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <custom:NumericTextBox x:Name="NumericTextBox_xMax" Style="{StaticResource NumericTextBoxStyle}" LostFocus="NumericTextBox_RepParams_LostFocus" KeyDown="NumericTextBox_RepParams_KeyDown"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="yMin" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <custom:NumericTextBox x:Name="NumericTextBox_yMin" Style="{StaticResource NumericTextBoxStyle}" LostFocus="NumericTextBox_RepParams_LostFocus" KeyDown="NumericTextBox_RepParams_KeyDown"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <Border Style="{StaticResource TextBlockBorderStyle}" HorizontalAlignment="Center">
+                        <TextBlock Text="yMax" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <custom:NumericTextBox x:Name="NumericTextBox_yMax" Style="{StaticResource NumericTextBoxStyle}" LostFocus="NumericTextBox_RepParams_LostFocus" KeyDown="NumericTextBox_RepParams_KeyDown"/>
+                </StackPanel>
+
+            </Grid>
+        </GroupBox>
+    </StackPanel>
+</Window>

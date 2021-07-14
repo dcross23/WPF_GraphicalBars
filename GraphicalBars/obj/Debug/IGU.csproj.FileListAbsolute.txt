@@ -1,0 +1,173 @@
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU.csprojAssemblyReference.cache
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\App.g.cs
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU_MarkupCompile.cache
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU_MarkupCompile.lref
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\IGU.exe.config
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\IGU.exe
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\IGU.pdb
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU.g.resources
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU.Properties.Resources.resources
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU.csproj.GenerateResource.cache
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU.exe
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU.pdb
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\src\view\PlotWindow.g.cs
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\src\view\PlotWindow.baml
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\src\view\ModelessUI.g.cs
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\src\view\ModelessUI.baml
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\src\view\AddPointWindow.g.cs
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\src\view\AddPointWindow.baml
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU.csproj.CopyComplete
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Desktop\IG\IGU-WPF\bin\Debug\Newtonsoft.Json.xml
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\src\view\ConfigWindow.g.cs
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\src\view\ConfigWindow.baml
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\App.baml
+C:\Users\David\Desktop\IG\IGU-WPF\obj\Debug\IGU_Content.g.cs
+C:\Users\David\Desktop\IG\IGU\bin\Debug\IGU.exe.config
+C:\Users\David\Desktop\IG\IGU\bin\Debug\IGU.exe
+C:\Users\David\Desktop\IG\IGU\bin\Debug\IGU.pdb
+C:\Users\David\Desktop\IG\IGU\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\Newtonsoft.Json.xml
+C:\Users\David\Desktop\IG\IGU\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU\obj\Debug\IGU.csprojAssemblyReference.cache
+C:\Users\David\Desktop\IG\IGU\obj\Debug\App.baml
+C:\Users\David\Desktop\IG\IGU\obj\Debug\src\view\AddPointWindow.g.cs
+C:\Users\David\Desktop\IG\IGU\obj\Debug\src\view\ConfigWindow.g.cs
+C:\Users\David\Desktop\IG\IGU\obj\Debug\src\view\ModelessUI.g.cs
+C:\Users\David\Desktop\IG\IGU\obj\Debug\src\view\PlotWindow.g.cs
+C:\Users\David\Desktop\IG\IGU\obj\Debug\App.g.cs
+C:\Users\David\Desktop\IG\IGU\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\David\Desktop\IG\IGU\obj\Debug\IGU_MarkupCompile.cache
+C:\Users\David\Desktop\IG\IGU\obj\Debug\IGU_MarkupCompile.lref
+C:\Users\David\Desktop\IG\IGU\obj\Debug\src\view\AddPointWindow.baml
+C:\Users\David\Desktop\IG\IGU\obj\Debug\src\view\ConfigWindow.baml
+C:\Users\David\Desktop\IG\IGU\obj\Debug\src\view\ModelessUI.baml
+C:\Users\David\Desktop\IG\IGU\obj\Debug\src\view\PlotWindow.baml
+C:\Users\David\Desktop\IG\IGU\obj\Debug\IGU.g.resources
+C:\Users\David\Desktop\IG\IGU\obj\Debug\IGU.Properties.Resources.resources
+C:\Users\David\Desktop\IG\IGU\obj\Debug\IGU.csproj.GenerateResource.cache
+C:\Users\David\Desktop\IG\IGU\obj\Debug\IGU.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\IG\IGU\obj\Debug\IGU.csproj.CopyComplete
+C:\Users\David\Desktop\IG\IGU\obj\Debug\IGU.exe
+C:\Users\David\Desktop\IG\IGU\obj\Debug\IGU.pdb
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\IGU.exe.config
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\IGU.exe
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\IGU.pdb
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\Newtonsoft.Json.xml
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\IGU.csprojAssemblyReference.cache
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\App.baml
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\src\view\AddPointWindow.g.cs
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\src\view\ConfigWindow.g.cs
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\src\view\ModelessUI.g.cs
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\src\view\PlotWindow.g.cs
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\App.g.cs
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\IGU_MarkupCompile.cache
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\IGU_MarkupCompile.lref
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\src\view\AddPointWindow.baml
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\src\view\ConfigWindow.baml
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\src\view\ModelessUI.baml
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\src\view\PlotWindow.baml
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\IGU.g.resources
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\IGU.Properties.Resources.resources
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\IGU.csproj.GenerateResource.cache
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\IGU.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\IGU.csproj.CopyComplete
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\IGU.exe
+C:\Users\David\Desktop\IG\IGU_WPF\IGU\obj\Debug\IGU.pdb
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\IGU.exe.config
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\IGU.exe
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\IGU.pdb
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\Newtonsoft.Json.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\Xceed.Wpf.AvalonDock.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\Xceed.Wpf.Toolkit.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\Newtonsoft.Json.xml
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\de\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\es\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\fr\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\hu\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\it\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\ro\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\ru\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\sv\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\bin\Debug\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\IGU.csprojAssemblyReference.cache
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\App.baml
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\src\view\AddPointWindow.g.cs
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\src\view\ConfigWindow.g.cs
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\src\view\ModelessUI.g.cs
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\src\view\PlotWindow.g.cs
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\App.g.cs
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\IGU_MarkupCompile.cache
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\IGU_MarkupCompile.lref
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\src\view\AddPointWindow.baml
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\src\view\ConfigWindow.baml
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\src\view\ModelessUI.baml
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\src\view\PlotWindow.baml
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\IGU.g.resources
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\IGU.Properties.Resources.resources
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\IGU.csproj.GenerateResource.cache
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\IGU.csproj.CoreCompileInputs.cache
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\IGU.csproj.CopyComplete
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\IGU.exe
+C:\Users\David\Desktop\Uni\Uni3o\1er cuatri\Interfaces\IGU\obj\Debug\IGU.pdb

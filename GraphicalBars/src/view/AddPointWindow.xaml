@@ -1,0 +1,259 @@
+﻿<Window x:Class="GraphicalBars.src.view.AddPointWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+        xmlns:custom="clr-namespace:GraphicalBars.src.utils"
+        xmlns:local="clr-namespace:GraphicalBars.src.view"
+        mc:Ignorable="d"
+        Title="Añadir punto" Height="300" Width="330" MinHeight="300" MinWidth="330" ResizeMode="CanMinimize"
+        Icon="/GraphicalBars;component/icons/GraphicalBarsIcon.png">
+
+    <!--Add/Cancel button styles just for this window -->
+    <Window.Resources>
+        <Style x:Key="AddButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Button.Content" Value="Añadir"/>
+            <Setter Property="Button.Padding" Value="10,3"/>
+            <Setter Property="Button.Margin" Value="20,0"/>
+            <Setter Property="Button.HorizontalAlignment" Value="Left"/>
+            <Setter Property="Button.VerticalAlignment" Value="Center"/>
+            <EventSetter Event="Click" Handler="AddButton_Click"/>
+        </Style>
+
+        <Style x:Key="CancelButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Button.Content" Value="Cancelar"/>
+            <Setter Property="Button.Padding" Value="10,3"/>
+            <Setter Property="Button.Margin" Value="20,0"/>
+            <Setter Property="Button.HorizontalAlignment" Value="Right"/>
+            <Setter Property="Button.VerticalAlignment" Value="Center"/>
+            <EventSetter Event="Button.Click" Handler="CancelButton_Click"/>
+        </Style>
+    </Window.Resources>
+    
+    
+    
+    <TabControl>
+        <!-- Manual -->
+        <TabItem IsSelected="True" Header="Manual" Name="TabManualGeneration">
+            <Grid Background="#FFF1F1F1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="0.7*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0" Style="{StaticResource StackPanelStyle}">
+                    <Border Style="{StaticResource TextBlockBorderStyle}">
+                        <TextBlock Text="X" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <custom:NumericTextBox x:Name="TextBox_X" Style="{StaticResource NumericTextBoxStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Column="1" Style="{StaticResource StackPanelStyle}">
+                    <Border Style="{StaticResource TextBlockBorderStyle}">
+                        <TextBlock Text="Y" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+                    <custom:NumericTextBox x:Name="TextBox_Y" Style="{StaticResource NumericTextBoxStyle}"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Style="{StaticResource StackPanelStyle}">
+                    <Border Style="{StaticResource TextBlockBorderStyle}">
+                        <TextBlock Text="Color" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+
+                    <xctk:ColorPicker Name="ColorPicker_Manual" DisplayColorTooltip="True" AvailableColorsSortingMode="HueSaturationBrightness"
+                                          SelectedColor="Blue" VerticalAlignment="Center" Width="150" Height="26" ></xctk:ColorPicker>
+
+                </StackPanel>
+
+                <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource CancelButtonStyle}"/>
+                <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource AddButtonStyle}"/>
+            </Grid>
+        </TabItem>
+
+
+        
+        <!-- Auto -->
+        <TabItem Header="Automático" Name="TabAutoGeneration">
+            <Grid Background="#FFF1F1F1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="0.4*"/>
+                    <RowDefinition Height="0.4*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Function selection -->
+                <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Style="{StaticResource StackPanelStyle}">
+                    <Border Style="{StaticResource TextBlockBorderStyle}">
+                        <TextBlock Text="Función" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+
+                    <ComboBox Name="ComboBoxFunctions" Width="230" HorizontalAlignment="Center" VerticalAlignment="Center" 
+                                  SelectionChanged="ComboBox_SelectionChanged">
+                        <ComboBoxItem IsSelected="True" Content="a(x^5)+b(x^4)+c(x^3)+d(x^2)+e(x)+f" FontSize="11"></ComboBoxItem>
+                        <ComboBoxItem Content="a + b*cos(x)" FontSize="11"></ComboBoxItem>
+                        <ComboBoxItem Content="a + b*sen(x)" FontSize="11"></ComboBoxItem>
+                        <ComboBoxItem Content="|x|" FontSize="11"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+
+                <!-- Values textBoxes -->
+                <Grid Background="Transparent" Grid.Row="1" Grid.ColumnSpan="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel Style="{StaticResource StackPanelStyle}">
+                        <Border Style="{StaticResource TextBlockBorderStyle}">
+                            <TextBlock Text="a" Style="{StaticResource TextBlockStyle}"/>
+                        </Border>
+                        <custom:NumericTextBox x:Name="TextBox_A" Style="{StaticResource NumericTextBoxStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Style="{StaticResource StackPanelStyle}">
+                        <Border Style="{StaticResource TextBlockBorderStyle}">
+                            <TextBlock Text="b" Style="{StaticResource TextBlockStyle}"/>
+                        </Border>
+                        <custom:NumericTextBox x:Name="TextBox_B" Style="{StaticResource NumericTextBoxStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Style="{StaticResource StackPanelStyle}">
+                        <Border Style="{StaticResource TextBlockBorderStyle}">
+                            <TextBlock Text="c" Style="{StaticResource TextBlockStyle}"/>
+                        </Border>
+                        <custom:NumericTextBox x:Name="TextBox_C" Style="{StaticResource NumericTextBoxStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="1" Grid.Row="1" Style="{StaticResource StackPanelStyle}">
+                        <Border Style="{StaticResource TextBlockBorderStyle}">
+                            <TextBlock Text="d" Style="{StaticResource TextBlockStyle}"/>
+                        </Border>
+                        <custom:NumericTextBox x:Name="TextBox_D" Style="{StaticResource NumericTextBoxStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Style="{StaticResource StackPanelStyle}">
+                        <Border Style="{StaticResource TextBlockBorderStyle}">
+                            <TextBlock Text="e" Style="{StaticResource TextBlockStyle}"/>
+                        </Border>
+                        <custom:NumericTextBox x:Name="TextBox_E" Style="{StaticResource NumericTextBoxStyle}"/>
+                    </StackPanel>
+
+                    <StackPanel Grid.Column="2" Grid.Row="1" Style="{StaticResource StackPanelStyle}">
+                        <Border Style="{StaticResource TextBlockBorderStyle}">
+                            <TextBlock Text="f" Style="{StaticResource TextBlockStyle}"/>
+                        </Border>
+                        <custom:NumericTextBox x:Name="TextBox_F" Style="{StaticResource NumericTextBoxStyle}"/>
+                    </StackPanel>
+                </Grid>
+
+
+                <!-- Range -->
+                <Border Grid.Row="2" Grid.ColumnSpan="2" Style="{StaticResource TextBlockBorderStyle}" 
+                            HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                    <TextBlock Text="Introduzca el rango de valores" Style="{StaticResource TextBlockStyle}"/>
+                </Border>
+
+                <StackPanel Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource StackPanelStyle}" VerticalAlignment="Top">
+                    <Border Style="{StaticResource TextBlockBorderStyle}">
+                        <TextBlock Text="XMin" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+
+                    <custom:NumericTextBox x:Name="TextBox_RangeXMin" Style="{StaticResource NumericTextBoxStyle}"/>
+
+                    <Border Style="{StaticResource TextBlockBorderStyle}">
+                        <TextBlock Text="Xmax" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+
+                    <custom:NumericTextBox x:Name="TextBox_RangeXMax" Style="{StaticResource NumericTextBoxStyle}"/>
+
+
+                </StackPanel>
+
+                <!-- Color -->
+                <StackPanel Grid.Row="4" Grid.ColumnSpan="2" Style="{StaticResource StackPanelStyle}">
+                    <Border Style="{StaticResource TextBlockBorderStyle}">
+                        <TextBlock Text="Color" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+
+                    <xctk:ColorPicker Name="ColorPicker_Auto" DisplayColorTooltip="True" AvailableColorsSortingMode="HueSaturationBrightness"
+                                          SelectedColor="Blue" VerticalAlignment="Center" Width="150" Height="26"></xctk:ColorPicker>
+
+
+                </StackPanel>
+
+
+                <!-- Add/Cancel buttons -->
+                <Button Grid.Row="5" Grid.Column="0" Style="{StaticResource CancelButtonStyle}"/>
+                <Button Grid.Row="5" Grid.Column="1" Style="{StaticResource AddButtonStyle}"/>
+
+            </Grid>
+        </TabItem>
+
+
+
+        <!-- Random -->
+        <TabItem Header="Aleatorio" Name="TabRandomGeneration">
+            <Grid Background="#FFF1F1F1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="0.7*"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+
+                <StackPanel Grid.Row="0" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button HorizontalAlignment="Center" VerticalAlignment="Center" Content="Generar" Margin="5" Padding="10,5"
+                            BorderBrush="{DynamicResource MenuBordersBrush}" Background="LightGray" FontSize="14" FontWeight="Bold" Click="ButtonGenerar_Click"/>
+
+                    <Border BorderBrush="{DynamicResource MenuBordersBrush}" BorderThickness="1" Margin="5" Padding="10,5" VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <TextBlock Name="TextBlock_Result" Width="125" HorizontalAlignment="Center" VerticalAlignment="Center"
+                                       FontSize="12" FontWeight="DemiBold"/>
+                    </Border>
+                </StackPanel>
+
+
+                <StackPanel Grid.Row="1" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Border Style="{StaticResource TextBlockBorderStyle}">
+                        <TextBlock Text="Color aleatorio" Style="{StaticResource TextBlockStyle}"/>
+                    </Border>
+
+                    <TextBlock Name="TextBlock_Color" Width="145" Height="35" Padding="10,5" HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" Background="Transparent"/>
+                </StackPanel>
+
+
+                <Button Grid.Row="2" Grid.Column="0" Style="{StaticResource CancelButtonStyle}"/>
+                <Button Grid.Row="2" Grid.Column="1" Style="{StaticResource AddButtonStyle}"/>
+
+            </Grid>
+        </TabItem>
+    
+    </TabControl>
+    
+</Window>
